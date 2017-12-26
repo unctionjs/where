@@ -1,6 +1,6 @@
 {
   "name": "@unction/where",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Compares a Record of Predicate Functions to a Functor of values",
   "keywords": [
     "unction",
