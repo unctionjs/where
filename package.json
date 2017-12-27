@@ -62,8 +62,8 @@
     "tap": "11.0.0"
   },
   "dependencies": {
-    "@unction/arrayify": "3.0.0",
-    "@unction/keychain": "3.0.0",
-    "@unction/reducewithvaluekey": "6.0.0"
+    "@unction/arrayify": "4.0.0",
+    "@unction/keychain": "4.0.0",
+    "@unction/reducewithvaluekey": "7.0.0"
   }
 }
