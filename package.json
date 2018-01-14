@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@unction/arrayify": "6.0.0",
-    "@unction/keychain": "6.0.0",
+    "@unction/keychain": "7.0.0",
     "@unction/reducewithvaluekey": "8.0.0"
   }
 }
