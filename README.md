@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> KeyedFunctorType<PredicateType> -> KeyedFunctorType -> boolean
+> KeyedFunctorType<PredicateType> => KeyedFunctorType => boolean
 
 Compares a Keyed Functor of Predicate Functions to a Functor of values. It is partial and prefers truthiness (meaning it only checks a key on the Functor if there is a key on the matcher).
 
