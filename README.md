@@ -4,9 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> KeyedFunctorType<PredicateType> => KeyedFunctorType => boolean
+> KeyedEnumerableType<PredicateFunctionType> => KeyedEnumerableType => boolean
 
-Compares a Keyed Functor of Predicate Functions to a Functor of values. It is partial and prefers truthiness (meaning it only checks a key on the Functor if there is a key on the matcher).
+Compares a Keyed Enumerable of Predicate Functions to a Enumerable of values. It is partial and prefers truthiness (meaning it only checks a key on the Functor if there is a key on the matcher).
 
 ``` javascript
 where(

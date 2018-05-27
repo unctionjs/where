@@ -1,11 +1,10 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type, no-magic-numbers */
-import {test} from "tap"
 import equals from "@unction/equals"
 
 import where from "./index"
 
-test("Deep Map vs Deep Object partial true", ({ok, end}) => {
-  ok(
+test("Deep Map vs Deep Object partial true", () => {
+  expect(
     where(
       new Map([
         [
@@ -22,26 +21,22 @@ test("Deep Map vs Deep Object partial true", ({ok, end}) => {
         age: 30,
       },
     })
-  )
-
-  end()
+  ).toBe(true)
 })
 
-test("Object vs Object partial true", ({ok, end}) => {
-  ok(
+test("Object vs Object partial true", () => {
+  expect(
     where(
       {name: equals("Kurtis Rainbolt-Greene")}
     )({
       name: "Kurtis Rainbolt-Greene",
       age: 30,
     })
-  )
-
-  end()
+  ).toBe(true)
 })
 
-test("Object vs Map partial true", ({ok, end}) => {
-  ok(
+test("Object vs Map partial true", () => {
+  expect(
     where(
       {name: equals("Kurtis Rainbolt-Greene")}
     )(
@@ -56,13 +51,11 @@ test("Object vs Map partial true", ({ok, end}) => {
         ],
       ])
     )
-  )
-
-  end()
+  ).toBe(true)
 })
 
-test("Array vs Array partial true", ({ok, end}) => {
-  ok(
+test("Array vs Array partial true", () => {
+  expect(
     where(
       [
         equals("Kurtis Rainbolt-Greene"),
@@ -73,13 +66,11 @@ test("Array vs Array partial true", ({ok, end}) => {
         30,
       ]
     )
-  )
-
-  end()
+  ).toBe(true)
 })
 
-test("Deep Map vs Deep Object all false", ({notOk, end}) => {
-  notOk(
+test("Deep Map vs Deep Object all false", () => {
+  expect(
     where(
       new Map([
         [
@@ -96,26 +87,22 @@ test("Deep Map vs Deep Object all false", ({notOk, end}) => {
         age: 30,
       },
     })
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Object vs Object all false", ({notOk, end}) => {
-  notOk(
+test("Object vs Object all false", () => {
+  expect(
     where(
       {name: equals("Zurtis Rainbolt-Greene")}
     )({
       name: "Kurtis Rainbolt-Greene",
       age: 30,
     })
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Object vs Map all false", ({notOk, end}) => {
-  notOk(
+test("Object vs Map all false", () => {
+  expect(
     where(
       {name: equals("Zurtis Rainbolt-Greene")}
     )(
@@ -130,13 +117,11 @@ test("Object vs Map all false", ({notOk, end}) => {
         ],
       ])
     )
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Array vs Array all false", ({notOk, end}) => {
-  notOk(
+test("Array vs Array all false", () => {
+  expect(
     where(
       [
         equals("Zurtis Rainbolt-Greene"),
@@ -147,13 +132,11 @@ test("Array vs Array all false", ({notOk, end}) => {
         30,
       ]
     )
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Deep Map vs Deep Object partial false", ({notOk, end}) => {
-  notOk(
+test("Deep Map vs Deep Object partial false", () => {
+  expect(
     where(
       new Map([
         [
@@ -177,13 +160,11 @@ test("Deep Map vs Deep Object partial false", ({notOk, end}) => {
         age: 30,
       },
     })
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Object vs Object partial false", ({notOk, end}) => {
-  notOk(
+test("Object vs Object partial false", () => {
+  expect(
     where(
       {
         name: equals("Kurtis Rainbolt-Greene"),
@@ -193,13 +174,11 @@ test("Object vs Object partial false", ({notOk, end}) => {
       name: "Kurtis Rainbolt-Greene",
       age: 30,
     })
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Object vs Map partial false", ({notOk, end}) => {
-  notOk(
+test("Object vs Map partial false", () => {
+  expect(
     where(
       {
         name: equals("Kurtis Rainbolt-Greene"),
@@ -217,13 +196,11 @@ test("Object vs Map partial false", ({notOk, end}) => {
         ],
       ])
     )
-  )
-
-  end()
+  ).toBe(false)
 })
 
-test("Array vs Array partial false", ({notOk, end}) => {
-  notOk(
+test("Array vs Array partial false", () => {
+  expect(
     where(
       [
         equals("Kurtis Rainbolt-Greene"),
@@ -235,7 +212,5 @@ test("Array vs Array partial false", ({notOk, end}) => {
         30,
       ]
     )
-  )
-
-  end()
+  ).toBe(false)
 })
