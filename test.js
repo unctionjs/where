@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
-import equals from "@unction/equals"
+import equals from "@unction/equals";
 
-import where from "./index"
+import where from "./index";
 
 test("Deep Map vs Deep Object partial true", () => {
   expect(
@@ -21,8 +21,8 @@ test("Deep Map vs Deep Object partial true", () => {
         age: 30,
       },
     })
-  ).toBe(true)
-})
+  ).toBe(true);
+});
 
 test("Object vs Object partial true", () => {
   expect(
@@ -32,8 +32,8 @@ test("Object vs Object partial true", () => {
       name: "Kurtis Rainbolt-Greene",
       age: 30,
     })
-  ).toBe(true)
-})
+  ).toBe(true);
+});
 
 test("Object vs Map partial true", () => {
   expect(
@@ -51,8 +51,8 @@ test("Object vs Map partial true", () => {
         ],
       ])
     )
-  ).toBe(true)
-})
+  ).toBe(true);
+});
 
 test("Array vs Array partial true", () => {
   expect(
@@ -66,8 +66,8 @@ test("Array vs Array partial true", () => {
         30,
       ]
     )
-  ).toBe(true)
-})
+  ).toBe(true);
+});
 
 test("Deep Map vs Deep Object all false", () => {
   expect(
@@ -87,8 +87,8 @@ test("Deep Map vs Deep Object all false", () => {
         age: 30,
       },
     })
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Object vs Object all false", () => {
   expect(
@@ -98,8 +98,8 @@ test("Object vs Object all false", () => {
       name: "Kurtis Rainbolt-Greene",
       age: 30,
     })
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Object vs Map all false", () => {
   expect(
@@ -117,8 +117,8 @@ test("Object vs Map all false", () => {
         ],
       ])
     )
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Array vs Array all false", () => {
   expect(
@@ -132,8 +132,8 @@ test("Array vs Array all false", () => {
         30,
       ]
     )
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Deep Map vs Deep Object partial false", () => {
   expect(
@@ -160,8 +160,8 @@ test("Deep Map vs Deep Object partial false", () => {
         age: 30,
       },
     })
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Object vs Object partial false", () => {
   expect(
@@ -174,8 +174,8 @@ test("Object vs Object partial false", () => {
       name: "Kurtis Rainbolt-Greene",
       age: 30,
     })
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Object vs Map partial false", () => {
   expect(
@@ -196,8 +196,8 @@ test("Object vs Map partial false", () => {
         ],
       ])
     )
-  ).toBe(false)
-})
+  ).toBe(false);
+});
 
 test("Array vs Array partial false", () => {
   expect(
@@ -212,5 +212,5 @@ test("Array vs Array partial false", () => {
         30,
       ]
     )
-  ).toBe(false)
-})
+  ).toBe(false);
+});
