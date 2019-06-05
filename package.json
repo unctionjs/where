@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@unction/arrayify": "7.1.0",
-    "@unction/dig": "1.0.1",
+    "@unction/dig": "1.1.0",
     "@unction/reducewithvaluekey": "11.1.0"
   },
   "module": "index.js",
