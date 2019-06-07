@@ -46,7 +46,7 @@
     "@babel/core": "7.3.4",
     "@babel/plugin-proposal-object-rest-spread": "7.3.4",
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
-    "@babel/preset-env": "7.3.4",
+    "@babel/preset-env": "7.4.4",
     "@babel/preset-typescript": "7.3.3",
     "@babel/register": "7.4.0",
     "@unction/equals": "1.50.0",
@@ -68,7 +68,8 @@
   "dependencies": {
     "@unction/arrayify": "7.1.0",
     "@unction/dig": "1.1.0",
-    "@unction/reducewithvaluekey": "11.1.0"
+    "@unction/reducewithvaluekey": "11.1.0",
+    "core-js": "3.0.1"
   },
   "module": "index.js",
   "browser": "browser.js"
