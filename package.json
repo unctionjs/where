@@ -66,9 +66,9 @@
     "tap": "12.6.1"
   },
   "dependencies": {
-    "@unction/arrayify": "7.3.0",
-    "@unction/dig": "1.3.0",
-    "@unction/reducewithvaluekey": "11.3.0",
+    "@unction/arrayify": "7.5.0",
+    "@unction/dig": "1.5.0",
+    "@unction/reducewithvaluekey": "11.5.0",
     "core-js": "3.0.1"
   },
   "module": "module.js",
