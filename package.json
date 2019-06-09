@@ -71,6 +71,6 @@
     "@unction/reducewithvaluekey": "11.2.0",
     "core-js": "3.0.1"
   },
-  "module": "index.js",
+  "module": "module.js",
   "browser": "browser.js"
 }
