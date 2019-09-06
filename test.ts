@@ -1,7 +1,7 @@
 /* eslint-disable no-magic-numbers */
 import equals from "@unction/equals";
 
-import where from "./index.ts";
+import where from "./index";
 
 test("Deep Map vs Deep Object partial true", () => {
   expect(
