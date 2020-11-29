@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> PredicateFunctionType<A> => KeyedEnumerableType<B> => boolean
+> PredicateFunctionType<A> => KeyedArray<B> | Set<B> | RecordType<B, unknown> | string => boolean
 
 Compares a Keyed Enumerable of Predicate Functions to a Enumerable of values. It is partial and prefers truthiness (meaning it only checks a key on the Functor if there is a key on the matcher).
 
