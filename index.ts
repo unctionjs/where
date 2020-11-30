@@ -4,11 +4,11 @@ import arrayify from "@unction/arrayify";
 import {PredicateFunctionType} from "./types";
 
 export default function where<A, B, C> (matcher: PredicateFunctionType<A>) {
-  return function whereMatcher (keyedEnumerable: KeyedArray<B> | Set<B> | RecordType<B, unknown> | string): boolean {
+  return function whereMatcher (keyedEnumerable: KeyedArray<B> | Set<B> | Record<string | number | symbol, unknown> | Map<B, unknown> | string): boolean {
     return reduceWithValueKey(
-      (latest: KeyedArray<B> | Set<B> | RecordType<B, unknown> | string) =>
+      (latest: KeyedArray<B> | Set<B> | Record<string | number | symbol, unknown> | Map<B, unknown> | string) =>
         (value: B) =>
-          (key: C): KeyedArray<B> | Set<B> | RecordType<B, unknown> | string =>
+          (key: C): KeyedArray<B> | Set<B> | Record<string | number | symbol, unknown> | Map<B, unknown> | string =>
             latest && value(
               dig(
                 arrayify(key)
