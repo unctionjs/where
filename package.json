@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "@unction/arrayify": "^7.13.0",
-    "@unction/dig": "^1.13.0",
+    "@unction/dig": "^1.14.0",
     "@unction/reducewithvaluekey": "^11.13.0"
   }
 }
